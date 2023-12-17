@@ -14,7 +14,12 @@ function CardData() {
       </div>
       <div className="cardData">
         <p>Overall Progress</p>
-        <h1>95%</h1>
+        <div className="increaseIconContainer">
+          <h1>95%</h1>
+          <i
+            class="fa fa-caret-up"
+            style={{ fontSize: "48px", color: "red" }}></i>
+        </div>
       </div>
     </div>
   );

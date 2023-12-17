@@ -54,21 +54,21 @@ const StreamedAreaChart = () => {
 
               <Area
                 type="monotone"
-                dataKey="SPCompleted"
+                dataKey="IssueCompleted"
                 stackId="1"
                 stroke="#3498db"
                 fill="white"
               />
               <Area
                 type="monotone"
-                dataKey="SPadded"
+                dataKey="IssueStarted"
                 stackId="1"
                 stroke="#2ecc71"
                 fill="#2ecc71"
               />
               <Area
                 type="monotone"
-                dataKey="SPPlanned"
+                dataKey="issueOpen"
                 stackId="1"
                 stroke="#e67e22"
                 fill="#e67e22"

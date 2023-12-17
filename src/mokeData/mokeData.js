@@ -1,5 +1,4 @@
 // this is the data which will be occured in both streamedAreaChart and sprintBarChart
-
 const data = [
   {
     sprint: "S1",
@@ -10,6 +9,9 @@ const data = [
     SPForecast: 0,
     date: "01/Jan/2022-31/Jan/2022",
     label: "Jan1-Jan31",
+    issueOpen: 3,
+    IssueStarted: 5,
+    IssueCompleted: 13,
   },
   {
     sprint: "S2",
@@ -20,6 +22,9 @@ const data = [
     SPForecast: 0,
     date: "01/Feb/2022-31/Feb/2022",
     label: "Feb1-Feb31",
+    issueOpen: 2,
+    IssueStarted: 7,
+    IssueCompleted: 9,
   },
   {
     sprint: "S3",
@@ -30,6 +35,9 @@ const data = [
     SPForecast: 0,
     date: "01/Mar/2022-31/Mar/2022",
     label: "Mar1-Mar31",
+    issueOpen: 6,
+    IssueStarted: 12,
+    IssueCompleted: 20,
   },
   {
     sprint: "S4",
@@ -40,6 +48,9 @@ const data = [
     SPForecast: 0,
     date: "01/Apr/2022-31/Apr/2022",
     label: "Apr1-Apr31",
+    issueOpen: 6,
+    IssueStarted: 12,
+    IssueCompleted: 24,
   },
   {
     name: "May",
@@ -50,16 +61,35 @@ const data = [
     SPForecast: 0,
     label: "May1-May31",
     date: "01/May/2022-31/May/2022",
+    issueOpen: 23,
+    IssueStarted: 30,
+    IssueCompleted: 31,
   },
   {
     name: "Jun",
+    sprint: "S6",
+    SPPlanned: 6,
+    SPadded: 7,
+    SPCompleted: 9,
+    SPForecast: 0,
+    label: "Jun1-Jun31",
+    date: "01/Jun/2022-31/Jun/2022",
+    issueOpen: 30,
+    IssueStarted: 30,
+    IssueCompleted: 31,
+  },
+  {
+    name: "Jul",
     sprint: "Forecast 1",
     SPPlanned: 0,
     SPadded: 0,
     SPCompleted: 0,
     SPForecast: 6,
-    label: "Jun1-Jun31",
-    date: "01/Jun/2022-31/Jun/2022",
+    label: "Jul1-Jul31",
+    date: "01/Jul/2022-31/Jul/2022",
+    issueOpen: 2,
+    IssueStarted: 6,
+    IssueCompleted: 24,
   },
 ];
 export default data;

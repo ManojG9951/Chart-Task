@@ -16,11 +16,17 @@
 .cardData h1 {
   padding: 0px;
   margin: 0px;
-  font-size: 40px;
+  font-size: 35px;
 }
 .cardData p {
   padding-top: 10px;
   margin: 0px;
   color: #808080;
   font-weight: 700;
+}
+.increaseIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
