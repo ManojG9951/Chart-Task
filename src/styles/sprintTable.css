@@ -1,0 +1,37 @@
+/* Sprint Table Component styles*/
+.sprintTableMain {
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sprint-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.sprint-table th {
+  padding: 12px;
+  text-align: center;
+}
+.sprint-table td {
+  border: 1px solid #8092a4;
+  padding: 12px;
+  text-align: center;
+}
+
+.sprint-table th {
+  background-color: #2f4f4f;
+  font-weight: 400;
+  color: #ffffff; /* Light grey background for headers */
+}
+.sprint-table tr {
+  background-color: #b9c9d8;
+  color: #ffffff;
+  font-weight: 400;
+}
+.sprint-table tr:hover {
+  background-color: var(--highlightColor);
+  color: black;
+}

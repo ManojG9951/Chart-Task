@@ -1,0 +1,12 @@
+.spPlannedIcon {
+  background-color: var(--primaryColor);
+}
+.spAddedIcon {
+  background-color: var(--secondaryColor);
+}
+.spCompletedIcon {
+  background-color: var(--accentColor);
+}
+.spForecastIcon {
+  background-color: var(--addOnColor);
+}

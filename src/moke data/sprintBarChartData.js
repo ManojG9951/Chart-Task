@@ -4,7 +4,7 @@ const data = [
     SPPlanned: 3,
     SPadded: 5,
     SPCompleted: 7,
-    SPForecast: 3,
+    SPForecast: 0,
     date: "01/Jan/2022-31/Jan/2022",
   },
   {
@@ -12,7 +12,7 @@ const data = [
     SPPlanned: 3,
     SPadded: 6,
     SPCompleted: 12,
-    SPForecast: 2,
+    SPForecast: 0,
     date: "01/Feb/2022-31/Feb/2022",
   },
   {
@@ -20,7 +20,7 @@ const data = [
     SPPlanned: 1,
     SPadded: 4,
     SPCompleted: 8,
-    SPForecast: 4,
+    SPForecast: 0,
     date: "01/Mar/2022-31/Mar/2022",
   },
   {
@@ -28,7 +28,7 @@ const data = [
     SPPlanned: 8,
     SPadded: 2,
     SPCompleted: 7,
-    SPForecast: 3,
+    SPForecast: 0,
     date: "01/Apr/2022-31/Apr/2022",
   },
   {
@@ -36,15 +36,15 @@ const data = [
     SPPlanned: 2,
     SPadded: 6,
     SPCompleted: 7,
-    SPForecast: 3,
+    SPForecast: 0,
     date: "01/May/2022-31/May/2022",
   },
   {
     sprint: "S6",
-    SPPlanned: 4,
-    SPadded: 5,
-    SPCompleted: 7,
-    SPForecast: 3,
+    SPPlanned: 0,
+    SPadded: 0,
+    SPCompleted: 0,
+    SPForecast: 6,
     date: "01/Jun/2022-31/Jun/2022",
   },
 ];

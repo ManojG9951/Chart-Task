@@ -1,0 +1,26 @@
+/* Card Data UI styles */
+.cardData {
+  background-color: #f6f6f6;
+  text-align: center;
+  width: 200px;
+  padding: 5px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cardData:hover {
+  border: 1px solid grey;
+  background-color: #d6d6d6;
+  transition: all 0.5s ease;
+}
+.cardData h1 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 40px;
+}
+.cardData p {
+  padding-top: 10px;
+  margin: 0px;
+  color: #808080;
+  font-weight: 700;
+}

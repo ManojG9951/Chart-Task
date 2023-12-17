@@ -1,6 +1,7 @@
 import React from "react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts";
 import data from "../moke data/sprintBarChartData";
+import "../styles/sprintBarChart.css";
 
 const SprintBarChart = () => {
   const CustomTooltip = ({ active, payload }) => {
@@ -36,7 +37,7 @@ const SprintBarChart = () => {
           <p>{`story point(SP)`}</p>
         </div>
         <BarChart
-          width={1000}
+          width={800}
           height={350}
           data={data}
           margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
@@ -45,8 +46,26 @@ const SprintBarChart = () => {
           <YAxis />
           <Tooltip content={<CustomTooltip />} />
           <Bar dataKey="SPPlanned" stackId="1" fill="#3498db" barSize={20} />
-          <Bar dataKey="SPadded" stackId="1" fill="#2ecc71" />
-          <Bar dataKey="SPCompleted" stackId="2" fill="#e67e22" barSize={20} />
+          <Bar
+            dataKey="SPadded"
+            stackId="1"
+            fill="#2ecc71"
+            radius={[25, 25, 0, 0]}
+          />
+          <Bar
+            dataKey="SPCompleted"
+            stackId="2"
+            fill="#e67e22"
+            barSize={20}
+            radius={[25, 25, 0, 0]}
+          />
+          <Bar
+            dataKey="SPForecast"
+            stackId="2"
+            fill="#fff67e"
+            barSize={20}
+            radius={[25, 25, 0, 0]}
+          />
         </BarChart>
       </div>
       <div>
@@ -64,6 +83,10 @@ const SprintBarChart = () => {
         <div className="chartIndicators">
           <div className="Icon spCompletedIcon" />
           <p>SP Completed</p>
+        </div>
+        <div className="chartIndicators">
+          <div className="Icon spForecastIcon" />
+          <p>SP Forecast</p>
         </div>
       </div>
     </div>

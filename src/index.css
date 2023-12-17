@@ -3,6 +3,7 @@
   --secondaryColor: #2ecc71; /* Green */
   --accentColor: #e67e22; /* Orange */
   --highlightColor: #d2d9df; /* Purple */
+  --addOnColor: #fff67e;
 }
 body {
   margin: 0;

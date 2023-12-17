@@ -1,5 +1,6 @@
 import React from "react";
 import sprintData from "../moke data/sprintTableData";
+import "../styles/sprintTable.css";
 
 const SprintTable = () => {
   return (
