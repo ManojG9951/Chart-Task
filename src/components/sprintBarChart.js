@@ -6,7 +6,7 @@ import "../styles/sprintBarChart.css";
 const SprintBarChart = () => {
   const CustomTooltip = ({ active, payload }) => {
     if (active && payload && payload.length) {
-      // console.log(payload);
+      console.log(payload);
       return (
         <div className="streamedChartMain">
           {/* <p className="legend-name">Custom Title</p> */}
@@ -22,6 +22,10 @@ const SprintBarChart = () => {
           <div className="streamedChartTextArea">
             <p>{`${payload[2].dataKey}`}</p>
             <p>{`${payload[2].value}`}</p>
+          </div>
+          <div className="streamedChartTextArea">
+            <p>{`SP Forecast`}</p>
+            <p>{`${payload[0].payload.SPForecast}`}</p>
           </div>
         </div>
       );
