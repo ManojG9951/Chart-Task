@@ -1,0 +1,51 @@
+const data = [
+  {
+    sprint: "S1",
+    SPPlanned: 3,
+    SPadded: 5,
+    SPCompleted: 7,
+    SPForecast: 3,
+    date: "01/Jan/2022-31/Jan/2022",
+  },
+  {
+    sprint: "S2",
+    SPPlanned: 3,
+    SPadded: 6,
+    SPCompleted: 12,
+    SPForecast: 2,
+    date: "01/Feb/2022-31/Feb/2022",
+  },
+  {
+    sprint: "S3",
+    SPPlanned: 1,
+    SPadded: 4,
+    SPCompleted: 8,
+    SPForecast: 4,
+    date: "01/Mar/2022-31/Mar/2022",
+  },
+  {
+    sprint: "S4",
+    SPPlanned: 8,
+    SPadded: 2,
+    SPCompleted: 7,
+    SPForecast: 3,
+    date: "01/Apr/2022-31/Apr/2022",
+  },
+  {
+    sprint: "S5",
+    SPPlanned: 2,
+    SPadded: 6,
+    SPCompleted: 7,
+    SPForecast: 3,
+    date: "01/May/2022-31/May/2022",
+  },
+  {
+    sprint: "S6",
+    SPPlanned: 4,
+    SPadded: 5,
+    SPCompleted: 7,
+    SPForecast: 3,
+    date: "01/Jun/2022-31/Jun/2022",
+  },
+];
+export default data;
