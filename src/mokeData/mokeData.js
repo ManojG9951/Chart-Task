@@ -1,3 +1,5 @@
+// this is the data which will be occured in both streamedAreaChart and sprintBarChart
+
 const data = [
   {
     sprint: "S1",
