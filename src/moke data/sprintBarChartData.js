@@ -40,7 +40,7 @@ const data = [
     date: "01/May/2022-31/May/2022",
   },
   {
-    sprint: "S6",
+    sprint: "Forecast 1",
     SPPlanned: 0,
     SPadded: 0,
     SPCompleted: 0,
