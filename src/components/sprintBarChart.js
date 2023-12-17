@@ -1,12 +1,12 @@
 import React from "react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts";
-import data from "../moke data/sprintBarChartData";
+import data from "../mokeData/mokeData";
 import "../styles/sprintBarChart.css";
 
 const SprintBarChart = () => {
   const CustomTooltip = ({ active, payload }) => {
     if (active && payload && payload.length) {
-      console.log(payload);
+      // console.log(payload);
       return (
         <div className="streamedChartMain">
           {/* <p className="legend-name">Custom Title</p> */}

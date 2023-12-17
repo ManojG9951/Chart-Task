@@ -9,7 +9,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import data from "../moke data/streamedAreaChartData";
+import data from "../mokeData/mokeData";
 
 const StreamedAreaChart = () => {
   const CustomTooltip = ({ active, payload }) => {
@@ -19,16 +19,16 @@ const StreamedAreaChart = () => {
         <div className="streamedChartMain">
           <p className="streamedLabelName">{`${payload[1].payload.label}`}</p>
           <div className="streamedChartTextArea">
-            <p>{`${payload[0].dataKey}`}</p>
-            <p>{`${payload[0].value}`}</p>
+            <p>{`Issue Open`}</p>
+            <p>{`${payload[2].value}`}</p>
           </div>
           <div className="streamedChartTextArea">
-            <p>{`${payload[1].dataKey}`}</p>
+            <p>{`Issue Started`}</p>
             <p>{`${payload[1].value}`}</p>
           </div>
           <div className="streamedChartTextArea">
-            <p>{`${payload[2].dataKey}`}</p>
-            <p>{`${payload[2].value}`}</p>
+            <p>{`Issue Completed`}</p>
+            <p>{`${payload[0].value}`}</p>
           </div>
         </div>
       );
@@ -54,21 +54,21 @@ const StreamedAreaChart = () => {
 
               <Area
                 type="monotone"
-                dataKey="IssueCompleted"
+                dataKey="SPCompleted"
                 stackId="1"
                 stroke="#3498db"
                 fill="white"
               />
               <Area
                 type="monotone"
-                dataKey="IssueStarted"
+                dataKey="SPadded"
                 stackId="1"
                 stroke="#2ecc71"
                 fill="#2ecc71"
               />
               <Area
                 type="monotone"
-                dataKey="IssueOpen"
+                dataKey="SPPlanned"
                 stackId="1"
                 stroke="#e67e22"
                 fill="#e67e22"
