@@ -37,9 +37,6 @@ const SprintBarChart = () => {
   return (
     <div className="mainContainer">
       <div className="chartContainer">
-        <div className="storyPointText">
-          <p>{`story point(SP)`}</p>
-        </div>
         <BarChart
           width={800}
           height={350}
@@ -47,26 +44,38 @@ const SprintBarChart = () => {
           margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="sprint" />
-          <YAxis />
+          <YAxis
+            label={{
+              value: "Story Point(SP)",
+              angle: -90,
+              position: "insideLeft",
+            }}
+            ticks={[0, 50, 100, 150, 200]}
+          />
           <Tooltip content={<CustomTooltip />} />
-          <Bar dataKey="SPPlanned" stackId="1" fill="#3498db" barSize={20} />
+          <Bar
+            dataKey="SPPlanned"
+            stackId="1"
+            fill="var(--accentColor"
+            barSize={20}
+          />
           <Bar
             dataKey="SPadded"
             stackId="1"
-            fill="#2ecc71"
+            fill="var(--secondaryColor)"
             radius={[25, 25, 0, 0]}
           />
           <Bar
             dataKey="SPCompleted"
             stackId="2"
-            fill="#e67e22"
+            fill="var(--primaryColor)"
             barSize={20}
             radius={[25, 25, 0, 0]}
           />
           <Bar
             dataKey="SPForecast"
             stackId="2"
-            fill="#fff67e"
+            fill="var(--highlightColor)"
             barSize={20}
             radius={[25, 25, 0, 0]}
           />

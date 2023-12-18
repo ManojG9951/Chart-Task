@@ -15,9 +15,20 @@
   height: 100vh;
   align-items: center;
 }
+.sprintsHeaderContainer {
+  display: flex;
+  gap: 20px;
+}
+.sprintsHeaderContainer h6 {
+  font-size: 12px;
+  color: var(--primaryColor);
+  text-align: center;
+  font-weight: 400;
+}
 .chartContainer {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #fff;
@@ -38,21 +49,23 @@
   border-radius: 50%;
 }
 .issueOpenIcon {
-  background-color: var(--accentColor);
+  background-color: var(--primaryColor);
 }
 .issueStartedIcon {
   background-color: var(--secondaryColor);
 }
 .issueCompletedIcon {
-  background-color: var(--primaryColor);
+  background-color: var(--accentColor);
 }
 
 .storyPointText p {
-  width: 30px;
   transform: rotate(270deg);
 }
 .chartMainContainer {
   width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .streamedChartMain {

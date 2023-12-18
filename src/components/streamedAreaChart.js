@@ -20,15 +20,15 @@ const StreamedAreaChart = () => {
           <p className="streamedLabelName">{`${payload[1].payload.label}`}</p>
           <div className="streamedChartTextArea">
             <p>{`Issue Open`}</p>
-            <p>{`${payload[2].value}`}</p>
+            <p>{`${Math.round(payload[2].value[1])}d`}</p>
           </div>
           <div className="streamedChartTextArea">
             <p>{`Issue Started`}</p>
-            <p>{`${payload[1].value}`}</p>
+            <p>{`${Math.round(payload[1].value[1])}d`}</p>
           </div>
           <div className="streamedChartTextArea">
             <p>{`Issue Completed`}</p>
-            <p>{`${payload[0].value}`}</p>
+            <p>{`${Math.round(payload[0].value[1])}d`}</p>
           </div>
         </div>
       );
@@ -39,39 +39,45 @@ const StreamedAreaChart = () => {
   return (
     <div className="mainContainer">
       <div className="chartContainer">
-        <div className="storyPointText">
-          <p>{`story point(days)`}</p>
+        <div className="sprintsHeaderContainer">
+          <h6 className="sprints_text">Total Lead Time:35 days(Avg)</h6>
+
+          <h6 className="sprints_text">Total Cycle Time:33 days(Avg)</h6>
         </div>
         <div className="chartMainContainer">
-          <ResponsiveContainer width="100%" height={400}>
+          <ResponsiveContainer width="80%" height={450}>
             <AreaChart
               data={data}
               margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="name" />
-              <YAxis />
+              <YAxis
+                label={{
+                  value: "Story Point(Days)",
+                  angle: -90,
+                  position: "insideLeft",
+                }}
+                ticks={[0, 10, 20, 30, 40, 50, 60]}
+              />
               <Tooltip content={<CustomTooltip />} />
 
               <Area
                 type="monotone"
                 dataKey="IssueCompleted"
-                stackId="1"
-                stroke="#3498db"
-                fill="white"
+                stroke=" var(--accentColor)"
+                fill=" var(--accentColor)"
               />
               <Area
                 type="monotone"
                 dataKey="IssueStarted"
-                stackId="1"
-                stroke="#2ecc71"
-                fill="#2ecc71"
+                stroke="var(--secondaryColor)"
+                fill="var(--secondaryColor)"
               />
               <Area
                 type="monotone"
                 dataKey="issueOpen"
-                stackId="1"
-                stroke="#e67e22"
-                fill="#e67e22"
+                stroke="var(--primaryColor)"
+                fill="var(--primaryColor)"
               />
             </AreaChart>
           </ResponsiveContainer>
